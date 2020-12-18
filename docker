@@ -1,1 +1,27 @@
 docker
+
+- 저장소 변경
+원래는 config 파일을 찾아서 이리저리 바꾸고 해야하는데, OS마다 방법이 다르고 심지어 OS 버전별로도 다르다.
+다행히도 도커 공식 문서에서 ‘OS 비종속적인 해결방법’을 소개해줬다.
+방법은 간단하다.
+단순히 /etc/docker/daemon.json을 수정하면 된다.
+{
+"graph": "/storage/repository/docker"
+}
+위의 키워드가 먹히지 않는다면 버전이 달라서 그렇다.
+참고로 graph 커맨드는 특정 버전 이후로 depreciated됐기 때문에, 필자는 data-root 커맨드를 추천한다.
+{
+"data-root": "/storage/repository/docker"
+}
+물론 위의 디렉터리는 미리 만들어놓아야 한다.
+이제 설정을 적용하고 도커를 재시작하면 된다.
+$ sudo service docker stop
+$ sudo systemctl daemon-reload
+$ sudo service docker start
+문제가 생겼을 경우 다음 커맨드로 에러를 확인하자.
+$ docker logs --tail 10 --follow --timestamps <container_name>
+재시작하면 지정된 경로에 도커 관련 폴더들이 생성되었을 것이다.
+만약 이전의 도커 정보를 유지하고 싶으면 이전 도커 저장경로를 그대로 복사해오면 된다.
+보통 CentOS 7에서는 /var/lib/docker/ 안에 있는 것 같다.
+물론 옮기고나서는 지워도 된다.
+또는 다음의 키워드로 불필요한 자료들을 지울 수도 있다.
