@@ -5,7 +5,7 @@ Kubernetes는 기본적으로 Google Kubernetes Engine (GKE)의 Runtime를 기�
 최근 K8SS가 업계표준으로 자리잡고 점유하면서 Docker에서 무료 사용에 대한 이슈를 제기되면서 구굴에서는 CRI-O를 개발하게 되었으며, 서서히 CRI-O로 전환이 되고 있다.
 
  
-- k8s별 cro 버전
+- Kubernetes Version별 CRI-O Version
 
 |Version|Branch	Kubernetes branch/version|
 |------|---|
