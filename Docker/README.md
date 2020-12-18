@@ -1,3 +1,23 @@
+# Docker Runtime
+
+Docker Runtime을 이용하여 Image를 만들거나 Private Registry를 구축하여 이용할수 있습니다.
+
+## Prerequisites
+
+Compatibility matrix: CRI-O ⬄ Kubernetes
+
+
+## Prerequisites
+
+Docker 19.03.12 (Workspace version, recommended)
+
+## Requirements
+
+#### 1) OS: Debian GNU/Linux 10 (Base OS of openjdk:8 in dockerhub)
+#### 2) JDK: OpenJDK 8 (build number 252) 
+#### 3) WildFly: WildFly 19.0.0 
+
+### Directory Structure
 
 Docker Runtime을 이용하여 Image를 만들거나 Private Registry를 구축하여 이용할수 있습니다.
 
