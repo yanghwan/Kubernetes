@@ -6,7 +6,7 @@ K8s 런타임 환경으로 이용 , Container 이미지를 만들기 위한 환�
 ### Docker Start 및 Stop
 sudo service docker stop\
 sudo systemctl daemon-reload\
-sudo service docker start	\
+sudo service docker start	
 
 ### Docker 저장소 변경
 Docker Runtime 위치는 OS 및 버전마다 다르기 때문에 해당파일를 수정하여 변경을 할수가 있습니다.\
