@@ -5,3 +5,6 @@ Kubernetes는 기본적으로 Google Kubernetes Engine (GKE)의 Runtime를 기�
 - 런타임
 docker, cri-o, rkt, containerd  지원를 하고 있으며 추후에는 변경이 될수 도 있습니다.
 
+- docker
+
+
