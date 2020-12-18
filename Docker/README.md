@@ -6,7 +6,7 @@ sudo service docker stop
 sudo systemctl daemon-reload
 sudo service docker start	
 
-- Docker Runtime 변경\
+- Docker 저장소 변경\
 Docker Runtime 위치는 OS 및 버전마다 다르기 때문에 해당파일를 수정하여 변경을 할수가 있습니다.\
 graph는 특정버전이후 depreciated 되어 있기 때문에  data-root를 사용하기를 권장합니다.
 
