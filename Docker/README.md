@@ -1,9 +1,6 @@
 # Docker Runtime
 Docker는 Contaienr가상화를 위한 런타임이며, Windows 및 Linux 환경에서 간단히 다운받아서 설치 및 활용할수 있습니다.
-1. K8s 런타임 환경으로 이용 \
-2. Container 이미지를 만들기 위한 환경으로 이용 \
-3. 생성된 이미지를 테스트 
-4. Docker Registry 저장소용으로도 활용할수가 있습니다. 
+K8s 런타임 환경으로 이용 , Container 이미지를 만들기 위한 환경으로 이용 , 생성된 이미지를 테스트, Docker Registry 저장소  활용할수 있습니다.  
 
 ## 사용방법
 ### Docker Start 및 Stop
