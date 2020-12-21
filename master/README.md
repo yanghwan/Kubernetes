@@ -14,33 +14,4 @@ W1221 21:29:03.795887    1917 validation.go:28] Cannot validate kube-proxy confi
 W1221 21:29:03.795960    1917 validation.go:28] Cannot validate kubelet config - no validator is available \
 kubeadm join 10.17.33.83:6443 --token bixz2y.xlxnt3ua5ims7oh1     --discovery-token-ca-cert-hash sha256:632a700b246a923fdd4481906236f5c8db4d70bffcd8297e2e6c47524cd39e05  \ 
 
-  - authentication
-kind: InitConfiguration
-localAPIEndpoint:
-  advertiseAddress: 1.2.3.4
-  bindPort: 6443
-nodeRegistration:
-  criSocket: /var/run/dockershim.sock
-  name: y-master01
-  taints:
-  - effect: NoSchedule
-    key: node-role.kubernetes.io/master
----
-apiServer:
-  timeoutForControlPlane: 4m0s
-apiVersion: kubeadm.k8s.io/v1beta2
-certificatesDir: /etc/kubernetes/pki
-clusterName: kubernetes
-controllerManager: {}
-dns:
-  type: CoreDNS
-etcd:
-  local:
-    dataDir: /var/lib/etcd
-imageRepository: k8s.gcr.io
-kind: ClusterConfiguration
-kubernetesVersion: v1.17.0
-networking:
-  dnsDomain: cluster.local
-  serviceSubnet: 10.96.0.0/12
-scheduler: {}
+ 
