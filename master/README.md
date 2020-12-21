@@ -3,10 +3,11 @@ kubeadm config print init-defaults  #init시 기본값들을 출력해준다.
 
 |||
 |---------|----------|
-| | [root@y-master01 hypercloud-install-guide]# kubeadm config print init-defaults
+| | \
+# kubeadm config print init-defaults
 W1221 21:01:00.479942  113488 validation.go:28] Cannot validate kube-proxy config - no validator is available
 W1221 21:01:00.480073  113488 validation.go:28] Cannot validate kubelet config - no validator is available
-apiVersion: kubeadm.k8s.io/v1beta2
+apiVersion: kubeadm.k8s.io/v1beta2]
 bootstrapTokens:
 - groups:
   - system:bootstrappers:kubeadm:default-node-token
